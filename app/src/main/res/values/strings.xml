@@ -1,0 +1,43 @@
+<resources>
+    <!-- Strings General -->
+    <string name="app_name">SEED</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="app_desc">Semeando o futuro com tecnologia</string>
+    <string name="app_login">Fazer login</string>
+    <string name="app_create">Criar uma conta</string>
+
+    <!-- Strings Login -->
+    <string name="sign_up">Sign up</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create account</string>
+    <string name="welcome_back">Olá!</string>
+    <string name="welcome_desc">Bem-vindo(a) de volta!</string>
+    <string name="login_desc">Transformando hábitos sustentáveis em benefícios compartilhados.\n Seja parte da mudança!</string>
+    <string name="login_google">Login with Google</string>
+    <string name="remember_date">Remember Data</string>
+    <string name="forget_password">Forget my password</string>
+    <string name="dont_have_account">Don\'t have account?</string>
+    <string name="have_account">Log in or create an account</string>
+    <string name="sign_up_google">Sign up with google</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+
+    <!-- Strings Register -->
+    <string name="register">Cadastre-se</string>
+    <string name="register_desc">Crie uma conta e faça parte da SEED!</string>
+    <string name="full_name">Full name</string>
+    <string name="company_id">ID Company</string>
+    <string name="user_type">User Type</string>
+    <string name="accept_terms">I learned and accept the terms</string>
+    <string name="already_have_account">Already have an account?</string>
+    <!-- User Types -->
+    <string-array name="user_types">
+        <item>Sou/faço parte de organização humanitária</item>
+        <item>Sou agricultor</item>
+        <item>Sou/faço parte de autoridade governamental</item>
+        <item>Quero apenas conhecer o app</item>
+    </string-array>
+</resources>
