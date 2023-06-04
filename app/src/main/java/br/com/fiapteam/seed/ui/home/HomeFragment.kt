@@ -1,12 +1,12 @@
 package br.com.fiapteam.seed.ui.home
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import br.com.fiapteam.seed.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -17,22 +17,26 @@ class HomeFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+        view?.let { super.onViewCreated(it, savedInstanceState) }
+        val myWebView = binding.webview
+        myWebView.webViewClient  = WebViewClient()
+        myWebView.loadUrl("https://www.google.com/")
+        myWebView.settings.javaScriptEnabled = true
+        myWebView.settings.allowContentAccess = true
+        myWebView.settings.domStorageEnabled = true
+        myWebView.settings.useWideViewPort = true
         return root
+
+
     }
 
     override fun onDestroyView() {
