@@ -30,7 +30,7 @@ class PanelFragment : Fragment() {
         (requireActivity() as AppCompatActivity).supportActionBar?.hide()
         val myWebView = binding.panelWebview
         myWebView.webViewClient  = WebViewClient()
-        myWebView.loadUrl("https://api-custo.vercel.app/")
+        myWebView.loadUrl("https://global-solutions-webview.vercel.app/menu/painel")
         myWebView.settings.javaScriptEnabled = true
         myWebView.settings.allowContentAccess = true
         myWebView.settings.domStorageEnabled = true

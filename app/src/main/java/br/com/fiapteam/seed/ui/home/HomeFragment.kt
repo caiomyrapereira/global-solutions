@@ -30,7 +30,7 @@ class HomeFragment : Fragment() {
         (requireActivity() as AppCompatActivity).supportActionBar?.hide()
         val myWebView = binding.homeWebview
         myWebView.webViewClient  = WebViewClient()
-        myWebView.loadUrl("https://api-custo.vercel.app/create")
+        myWebView.loadUrl("https://global-solutions-webview.vercel.app/menu/inicio")
         myWebView.settings.javaScriptEnabled = true
         myWebView.settings.allowContentAccess = true
         myWebView.settings.domStorageEnabled = true

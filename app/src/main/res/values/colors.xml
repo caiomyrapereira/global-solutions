@@ -13,4 +13,5 @@
     <color name="nav_bgk">#202020</color>
     <color name="nav_icon_color">#B1B1B1</color>
     <color name="nav_icon_color_active">#489673</color>
+    <color name="header">#F5F5F0</color>
 </resources>
