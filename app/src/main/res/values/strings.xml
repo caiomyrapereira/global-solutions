@@ -3,8 +3,12 @@
     <string name="app_name">SEED</string>
     <string name="title_activity_home">Home</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_dashboard">Monitorar</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_panel">Painel</string>
+    <string name="title_report">Relatórios</string>
+    <string name="title_forum">Fórum</string>
+
     <string name="app_desc">Semeando o futuro com tecnologia</string>
     <string name="app_login">Fazer login</string>
     <string name="app_create">Criar uma conta</string>
@@ -40,4 +44,6 @@
         <item>Sou/faço parte de autoridade governamental</item>
         <item>Quero apenas conhecer o app</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

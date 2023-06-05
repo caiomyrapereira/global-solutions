@@ -10,4 +10,7 @@
     <color name="orange">#C18A52</color>
     <color name="green">#357156</color>
     <color name="login_google">#212121</color>
+    <color name="nav_bgk">#202020</color>
+    <color name="nav_icon_color">#B1B1B1</color>
+    <color name="nav_icon_color_active">#489673</color>
 </resources>

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebViewClient
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import br.com.fiapteam.seed.databinding.FragmentHomeBinding
 
@@ -23,20 +24,18 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
         view?.let { super.onViewCreated(it, savedInstanceState) }
-        val myWebView = binding.webview
+        (requireActivity() as AppCompatActivity).supportActionBar?.hide()
+        val myWebView = binding.homeWebview
         myWebView.webViewClient  = WebViewClient()
-        myWebView.loadUrl("https://www.google.com/")
+        myWebView.loadUrl("https://api-custo.vercel.app/create")
         myWebView.settings.javaScriptEnabled = true
         myWebView.settings.allowContentAccess = true
         myWebView.settings.domStorageEnabled = true
         myWebView.settings.useWideViewPort = true
         return root
-
-
     }
 
     override fun onDestroyView() {

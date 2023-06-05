@@ -12,14 +12,27 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/navigation_panel"
+        android:name="br.com.fiapteam.seed.ui.panel.PanelFragment"
+        android:label="@string/title_panel"
+        tools:layout="@layout/fragment_panel" />
+
+    <fragment
         android:id="@+id/navigation_dashboard"
         android:name="br.com.fiapteam.seed.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="br.com.fiapteam.seed.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_report"
+        android:name="br.com.fiapteam.seed.ui.report.ReportFragment"
+        android:label="@string/title_report"
+        tools:layout="@layout/fragment_report" />
+
+    <fragment
+        android:id="@+id/navigation_forum"
+        android:name="br.com.fiapteam.seed.ui.forum.ForumFragment"
+        android:label="@string/title_forum"
+        tools:layout="@layout/fragment_forum" />
+
 </navigation>
